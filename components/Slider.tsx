@@ -6,27 +6,32 @@ import Image from "next/image";
 
 export function Slider() {
   return (
-    <div className="h-[20rem] mt-9 bg-slate-100">
-      <Carousel className="rounded-none">
+    <div className="h-[12rem] sm:h-[12rem] md:h-[17rem] lg:h-[17rem] xl:h-[22rem] mt-0 bg-slate-100">
+      <Carousel className="rounded-none bg-gradient-to-r from-slate-500 via-transparent to-slate-500">
 
-      <div className="flex justify-center bg-slate-100 w-full h-full">      
-        <Image width={1920} height={1080} className="h-auto w-1/2 mt-0" src="/img/1.png" alt="..." />
+      <div className="flex justify-center w-full h-full">      
+        <div className="absolute bottom-0 w-full h-12 bg-gradient-to-t from-slate-500 to-transparent opacity-60"></div>
+        <Image width={1920} height={1080} className="h-auto w-full sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2 mt-0" src="/img/1.png" alt="..." />
       </div> 
 
-      <div className="flex justify-center bg-slate-100 w-full h-full">
-        <Image width={1920} height={1080} className="h-auto w-1/2 mt-0" src="/img/2.png" alt="..." />
+      <div className="flex justify-center w-full h-full">
+      <div className="absolute bottom-0 w-full h-12 bg-gradient-to-t from-slate-500 to-transparent opacity-60"></div>
+        <Image width={1920} height={1080} className="h-auto w-full sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2 mt-0" src="/img/2.png" alt="..." />
       </div> 
 
-      <div className="flex justify-center bg-slate-100 w-full h-full">
-        <Image width={1920} height={1080} className="h-auto w-1/2 mt-0" src="/img/3.png" alt="..." />
+      <div className="flex justify-center w-full h-full">
+      <div className="absolute bottom-0 w-full h-12 bg-gradient-to-t from-slate-500 to-transparent opacity-60"></div>
+        <Image width={1920} height={1080} className="h-auto w-full sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2 mt-0" src="/img/3.png" alt="..." />
       </div> 
 
-      <div className="flex justify-center bg-slate-100 w-full h-full">
-        <Image width={1920} height={1080} className="h-auto w-1/2 mt-0" src="/img/4.png" alt="..." />
+      <div className="flex justify-center w-full h-full">
+      <div className="absolute bottom-0 w-full h-12 bg-gradient-to-t from-slate-500 to-transparent opacity-60"></div>
+        <Image width={1920} height={1080} className="h-auto w-full sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2 mt-0" src="/img/4.png" alt="..." />
       </div> 
 
-      <div className="flex justify-center bg-slate-100 w-full h-full">
-        <Image width={1920} height={1080} className="h-auto w-1/2 mt-0" src="/img/5.png" alt="..." />
+      <div className="flex justify-center w-full h-full">
+      <div className="absolute bottom-0 w-full h-12 bg-gradient-to-t from-slate-500 to-transparent opacity-60"></div>
+        <Image width={1920} height={1080} className="h-auto w-full sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2 mt-0" src="/img/5.png" alt="..." />
       </div>  
 
       </Carousel>
