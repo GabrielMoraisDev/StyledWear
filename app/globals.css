@@ -77,6 +77,10 @@ body {
   background-color: #E7A481;
 }
 
+.custom-hr{
+  border-color: #E7A481;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

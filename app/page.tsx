@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Features from "@/components/Features";
 import {Slider} from "@/components/Slider";
 
 export default function Home() {
@@ -9,9 +10,13 @@ export default function Home() {
    <Slider></Slider>
 
    <div className="w-[92%] m-auto">
-    <div className="h-96 bg-white"></div>
 
-    <hr className="border-slate-400"/>
+   <p className="text-xl text-black text-center mt-5 text-font-300 uppercase">Elegância que reflete sua essência</p>
+   <hr className="my-3 custom-hr"/>
+
+    <Features></Features>
+
+    <hr className="custom-hr"/>
    <Footer></Footer>
    </div>
     </div>

@@ -1,19 +1,45 @@
+'use client'
+import { useState } from "react"
+import Link from "next/link"
+
 export default function Navbar() {
+    const[menu, setMenu] = useState<boolean>(false)
+
     return (
         <>
         <div className="h-20 w-full bg1 z-50">
-            <h1 className="text-center text-black text-font-500 text-4xl uppercase pt-5">Beauty Style</h1>
+            <h1 className="text-center text-black text-font-500 text-2xl sm:text-4xl uppercase pt-5">Beauty Style</h1>
             <hr className="w-[89.3%] m-auto border-black mt-2"/>
         </div>
-            <nav className="bg1 sticky top-0 w-full h-16 z-50 flex text-font-300 place-items-center">
-                <div className="sm:ml-10 sm:text-sm md:text-sm md:ml-14 xl:text-md xl:ml-20 text-white text-md cursor-pointer">BRINCOS</div>
-                <div className="sm:ml-3 sm:text-sm md:text-sm md:ml-10 xl:text-md xl:ml-20 text-white text-md cursor-pointer">ANÉIS</div>
-                <div className="sm:ml-3 sm:text-sm md:text-sm md:ml-10 xl:text-md xl:ml-20 text-white text-md cursor-pointer">COLARES</div>
-                <div className="sm:ml-3 sm:text-sm md:text-sm md:ml-10 xl:text-md xl:ml-20 text-white text-md cursor-pointer">PULSEIRAS</div>
 
-                <div className="flex ml-auto sm:mr-10 md:mr-12 lg:mr-14 xl:mr-20 w-[30%] h-12">
+            <nav className="bg1 sticky mt-[-1rem] top-0 sm:top-0 sm:mt-0 w-full h-16 z-50 flex text-font-300 place-items-center">
+
+            <div className="border-white border w-10 h-10 absolute left-[5vw] mb-5 sm:hidden rounded-md flex justify-center place-items-center mt-10 top-[-1.7rem]">
+                <svg xmlns="http://www.w3.org/2000/svg" width="55%" height="55%" fill="currentColor" className={`bi bi-list text-white ${menu?'hidden':'block'}`} viewBox="0 0 16 16"  onClick={()=>setMenu(true)}>
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="55%" height="55%" fill="currentColor" className={`bi bi-x text-white ${menu?'block':'hidden'}`}viewBox="0 0 16 16"  onClick={()=>setMenu(false)}>
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                </svg>
+            </div>
+
+            <div className={`inline sm:hidden absolute bg1 w-full ${menu ? 'h-1 pb-72' : 'h-0'} left-0 top-11 overflow-hidden text-white duration-300 mt-4`}>
+                <Link href='/'><p className="ml-[6vw] mt-4">BRINCOS</p></Link>
+                <Link href='/'><p className="mt-4 ml-[6vw]">ANÉIS</p></Link>
+                <Link href='/'><p className="mt-4 ml-[6vw]">COLARES</p></Link>
+                <Link href='/'><p className="mt-4 ml-[6vw]">PULSEIRAS</p></Link>
+                <Link href='/'><p className="mt-4 ml-[6vw]">TODOS OS PRODUTOS</p></Link>
+                <Link href='/'><p className="mt-4 ml-[6vw]">CARRINHO DE COMPRAS</p></Link>
+            </div>
+
+                <div className="hidden sm:block sm:ml-10 sm:text-sm md:text-sm md:ml-14 xl:text-md xl:ml-20 text-white text-md cursor-pointer">BRINCOS</div>
+                <div className="hidden sm:block sm:ml-3 sm:text-sm md:text-sm md:ml-10 xl:text-md xl:ml-20 text-white text-md cursor-pointer">ANÉIS</div>
+                <div className="hidden sm:block sm:ml-3 sm:text-sm md:text-sm md:ml-10 xl:text-md xl:ml-20 text-white text-md cursor-pointer">COLARES</div>
+                <div className="hidden sm:block sm:ml-3 sm:text-sm md:text-sm md:ml-10 xl:text-md xl:ml-20 text-white text-md cursor-pointer">PULSEIRAS</div>
+
+                <div className="hidden sm:flex ml-auto sm:mr-10 sm:w-[40%] md:mr-12 lg:mr-14 xl:mr-20 w-[30%] h-12">
                     <div className="w-[60%] bg-white h-10 flex ml-auto mr-2 rounded-md overflow-hidden">
-                        <input type="text" className="flex place-items-center bg-white text-black border-0 w-[80%] h-10 pl-6 font-sans focus:outline-none focus:ring-0" placeholder="Pesquisar..."/>
+                        <input type="text" className="flex place-items-center bg-white text-black border-0 w-[80%] h-full pl-6 font-sans focus:outline-none focus:ring-0" placeholder="Pesquisar..."/>
                         <div className="w-[1px] h-[70%] my-auto bg-slate-700 text-white"></div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="flex m-auto justify-center bi bi-search text-black" viewBox="0 0 16 16">
                         <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
