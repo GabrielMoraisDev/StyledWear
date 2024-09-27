@@ -77,6 +77,27 @@ body {
   background-color: #E7A481;
 }
 
+.bg-img1{
+  background-image: url('/img/image.png');
+  background-size: cover;
+}
+
+.bg-img2{
+  background-image: url('/img/image2.png');
+  background-size: cover;
+}
+
+.bg-img3{
+  background-image: url('/img/image3.png');
+  background-size: cover;
+}
+
+.bg-capa{
+  background-image: url('/img/capa-bg.png');
+  background-size: cover;
+  background-position: center;
+}
+
 .custom-hr{
   border-color: #E7A481;
 }
