@@ -13,11 +13,11 @@ export default function Home() {
 
    <div className="w-[92%] m-auto">
 
-   <p className="text-xl text-black text-center mt-5 text-font-300 uppercase">Elegância e classe para todos os estilos</p>
+   <p className="text-xl text-black text-center mt-5 text-font-300 uppercase">SEU ESTILO, NOSSO COMPROMISSO</p>
    <hr className="my-3 custom-hr"/>
 
     <Features></Features>
-    <p className="text-xl text-black text-center text-font-300 uppercase my-12 w-[80%] m-auto">Roupas criadas pensando em você <br /> para todos os eventos</p>
+    <p className="text-xl text-black text-center text-font-300 uppercase my-12 w-[80%] m-auto">Roupas criadas  para todos os eventos<br />pensando em você</p>
 
     <Vitrini></Vitrini>
     <hr className="custom-hr mt-7"/>

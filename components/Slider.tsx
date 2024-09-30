@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export function Slider() {
   return (
-    <div className="h-[50vw] sm:h-[12rem] md:h-[35vw] lg:h-[17rem] xl:h-[22rem] mt-0 bg-slate-100">
+    <div className="h-[50vw] sm:h-[12rem] md:h-[35vw] lg:h-[17rem] xl:h-[22rem] 2xl:h-[30rem] mt-0 bg-slate-100">
       <Carousel className="rounded-none bg-gradient-to-r from-slate-500 via-transparent to-slate-500">
 
       <div className="flex justify-center w-full h-full">      
