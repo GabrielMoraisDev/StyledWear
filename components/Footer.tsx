@@ -1,7 +1,7 @@
 export default function footer(){
     return(
         <footer className="w-full h-16 flex place-items-center">
-            <h1 className="uppercase flex place-items-center text-font-100 text-slate-400 text-md">Beauty Style</h1>
+            <h1 className="uppercase flex place-items-center text-font-100 text-slate-400 text-md">Style Wear</h1>
             <p className="uppercase flex place-items-center ml-2 text-slate-400 text-md">- 2024</p>
             <div className="mr-0 ml-auto float-end w-auto h-10 flex">
                 <div className="w-8 h-8 bg-slate-400 text-white rounded-full flex justify-center place-items-center hover:opacity-75 cursor-pointer duration-300">

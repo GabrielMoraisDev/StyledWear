@@ -29,11 +29,6 @@ export function Slider() {
         <Image width={1920} height={1080} className="h-auto w-full sm:w-1/2 md:w-[70%] lg:w-1/2 xl:w-1/2 mt-0" src="/img/4.png" alt="..." />
       </div> 
 
-      <div className="flex justify-center w-full h-full">
-      <div className="absolute bottom-0 w-full h-12 bg-gradient-to-t from-slate-500 to-transparent opacity-60"></div>
-        <Image width={1920} height={1080} className="h-auto w-full sm:w-1/2 md:w-[70%] lg:w-1/2 xl:w-1/2 mt-0" src="/img/5.png" alt="..." />
-      </div>  
-
       </Carousel>
     </div>
   );

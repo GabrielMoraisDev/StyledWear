@@ -13,11 +13,11 @@ export default function Home() {
 
    <div className="w-[92%] m-auto">
 
-   <p className="text-xl text-black text-center mt-5 text-font-300 uppercase">Elegância que reflete sua essência</p>
+   <p className="text-xl text-black text-center mt-5 text-font-300 uppercase">Elegância e classe para todos os estilos</p>
    <hr className="my-3 custom-hr"/>
 
     <Features></Features>
-    <p className="text-xl text-black text-center text-font-300 uppercase my-12 w-[80%] m-auto">Acessórios sofisticados para seu cotidiano, <br /> eventos de classe entre outros</p>
+    <p className="text-xl text-black text-center text-font-300 uppercase my-12 w-[80%] m-auto">Roupas criadas pensando em você <br /> para todos os eventos</p>
 
     <Vitrini></Vitrini>
     <hr className="custom-hr mt-7"/>
@@ -25,7 +25,7 @@ export default function Home() {
 
     <Catalog></Catalog>
     <div className="w-[92%] m-auto">
-    <p className="text-xl text-black text-center text-font-300 uppercase my-12 w-[80%] m-auto">“As joias certas realçam sua beleza de formas inimagináveis.”</p>
+    <p className="text-xl text-black text-center text-font-300 uppercase my-12 w-[80%] m-auto">“As roupas certas podem refletir o seu verdadeiro estilo.”</p>
 
     <hr className="custom-hr"/>
    <Footer></Footer>

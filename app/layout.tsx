@@ -14,8 +14,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Beauty Style",
-  description: "Template front-end by Gabriel Morais",
+  title: "Style Wear",
+  description: "Created by Gabriel Morais",
 };
 
 export default function RootLayout({

@@ -8,8 +8,8 @@ export default function Navbar() {
     return (
         <>
         <div className="h-20 w-full bg1 z-50">
-            <h1 className="text-center text-black text-font-500 text-2xl sm:text-4xl uppercase pt-5">Beauty Style</h1>
-            <hr className="w-[89.3%] m-auto border-black mt-2"/>
+            <h1 className="text-center text-white text-font-500 text-2xl sm:text-4xl uppercase pt-5">Style Wear</h1>
+            <hr className="w-[89.3%] m-auto border-white mt-2"/>
         </div>
 
             <nav className="bg1 sticky mt-[-1rem] top-0 sm:top-0 sm:mt-0 w-full h-16 z-50 flex text-font-300 place-items-center">
@@ -24,18 +24,18 @@ export default function Navbar() {
             </div>
 
             <div className={`inline sm:hidden absolute bg1 w-full ${menu ? 'h-1 pb-72' : 'h-0'} left-0 top-11 overflow-hidden text-white duration-300 mt-4`}>
-                <Link href='/'><p className="ml-[6vw] mt-4">BRINCOS</p></Link>
-                <Link href='/'><p className="mt-4 ml-[6vw]">ANÉIS</p></Link>
-                <Link href='/'><p className="mt-4 ml-[6vw]">COLARES</p></Link>
-                <Link href='/'><p className="mt-4 ml-[6vw]">PULSEIRAS</p></Link>
-                <Link href='/'><p className="mt-4 ml-[6vw]">TODOS OS PRODUTOS</p></Link>
+                <Link href='/'><p className="ml-[6vw] mt-4">CAMISAS</p></Link>
+                <Link href='/'><p className="mt-4 ml-[6vw]">CALÇAS</p></Link>
+                <Link href='/'><p className="mt-4 ml-[6vw]">PRODUTOS</p></Link>
+                <Link href='/'><p className="mt-4 ml-[6vw]">INFORMAÇÕES</p></Link>
+                <Link href='/'><p className="mt-4 ml-[6vw]">MINHA CONTA</p></Link>
                 <Link href='/'><p className="mt-4 ml-[6vw]">CARRINHO DE COMPRAS</p></Link>
             </div>
 
-                <div className="hidden sm:block sm:ml-10 sm:text-sm md:text-sm md:ml-14 xl:text-md xl:ml-20 text-white text-md cursor-pointer">BRINCOS</div>
-                <div className="hidden sm:block sm:ml-3 sm:text-sm md:text-sm md:ml-10 xl:text-md xl:ml-20 text-white text-md cursor-pointer">ANÉIS</div>
-                <div className="hidden sm:block sm:ml-3 sm:text-sm md:text-sm md:ml-10 xl:text-md xl:ml-20 text-white text-md cursor-pointer">COLARES</div>
-                <div className="hidden sm:block sm:ml-3 sm:text-sm md:text-sm md:ml-10 xl:text-md xl:ml-20 text-white text-md cursor-pointer">PULSEIRAS</div>
+                <div className="hidden sm:block sm:ml-10 sm:text-sm md:text-sm md:ml-14 xl:text-md xl:ml-20 text-white text-md cursor-pointer">CAMISAS</div>
+                <div className="hidden sm:block sm:ml-3 sm:text-sm md:text-sm md:ml-10 xl:text-md xl:ml-20 text-white text-md cursor-pointer">CALÇAS</div>
+                <div className="hidden sm:block sm:ml-3 sm:text-sm md:text-sm md:ml-10 xl:text-md xl:ml-20 text-white text-md cursor-pointer">PRODUTOS</div>
+                <div className="hidden sm:block sm:ml-3 sm:text-sm md:text-sm md:ml-10 xl:text-md xl:ml-20 text-white text-md cursor-pointer">INFORMAÇÕES</div>
 
                 <div className="hidden sm:flex ml-auto sm:mr-10 sm:w-[40%] md:mr-12 lg:mr-14 xl:mr-20 w-[30%] h-12">
                     <div className="w-[60%] bg-white h-10 flex ml-auto mr-2 rounded-md overflow-hidden">

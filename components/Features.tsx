@@ -5,7 +5,7 @@ export default function Features(){
 
             <div className="w-full h-96 lg:h-80 overflow-hidden cursor-pointer">
                 <div className="h-full w-[85%] m-auto relative lg:opacity-65 lg:hover:opacity-100 duration-300">
-                    <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-2xl uppercase text-font-300 text-nowrap text-white z-40">Brincos</div>
+                    <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-2xl uppercase text-font-300 text-nowrap text-white z-40">Camisas</div>
                     <div className="w-full absolute h-96 bottom-0 bg-gradient-to-t from-slate-700 to-transparent z-30 opacity-75"></div>
                     <div className="w-full absolute h-96 bottom-0 bg-img1"></div>
                 </div>
@@ -13,7 +13,7 @@ export default function Features(){
 
             <div className="w-full h-96 lg:h-80 overflow-hidden cursor-pointer">
                 <div className="h-full w-[85%] m-auto relative lg:opacity-65 lg:hover:opacity-100 duration-300">
-                    <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-2xl uppercase text-font-300 text-nowrap text-white z-40">Colares</div>
+                    <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-2xl uppercase text-font-300 text-nowrap text-white z-40">Calças</div>
                     <div className="w-full absolute h-96 bottom-0 bg-gradient-to-t from-slate-700 to-transparent z-30 opacity-75"></div>
                     <div className="w-full absolute h-96 bottom-0 bg-img2"></div>
                 </div>
@@ -21,7 +21,7 @@ export default function Features(){
 
             <div className="w-full h-96 lg:h-80 overflow-hidden cursor-pointer">
                 <div className="h-full w-[85%] m-auto relative lg:opacity-65 lg:hover:opacity-100 duration-300">
-                    <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-2xl uppercase text-font-300 text-nowrap text-white z-40">Anéis</div>
+                    <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-2xl uppercase text-font-300 text-nowrap text-white z-40">Mais produtos</div>
                     <div className="w-full absolute h-96 bottom-0 bg-gradient-to-t from-slate-700 to-transparent z-30 opacity-75"></div>
                     <div className="w-full absolute h-96 bottom-0 bg-img3"></div>
                 </div>
