@@ -8,7 +8,7 @@ import {Slider} from "@/components/Slider";
 export default function Home() {
   return (
     <div className="w-full h-auto">
-   <Navbar></Navbar>
+   <Navbar page='home'></Navbar>
    <Slider></Slider>
 
    <div className="w-[92%] m-auto">

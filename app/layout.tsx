@@ -14,7 +14,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Style Wear",
+  title: "Styled Wear",
   description: "Created by Gabriel Morais",
 };
 
