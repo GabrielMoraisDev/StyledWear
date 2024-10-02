@@ -1,5 +1,6 @@
 'use client'
 import { useState } from 'react';
+import { useRouter } from 'next/router';
 import '@/app/globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -8,6 +9,8 @@ import Head from 'next/head';
 
 export default function Shirts() {
   const [searchTerm, setSearchTerm] = useState('');
+  const router = useRouter();
+  const qntSave = Number(router.query.qnt) || 0; 
   
   const products = [
     { title: 'Jaqueta BeWase', price: 1299.99, imagem: 'vitrini1.png', description: 'Descrição do primeiro produto. Esse texto pode ser alterado e personalizado de acordo com a necessidade do cliente.' },
@@ -23,16 +26,16 @@ export default function Shirts() {
   const filteredProducts = products.filter(product =>
     product.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
-  
+
   return (
     <div className="mb-10">
 
       <Head>
-        <title>Camisas - Styled Wear</title>
-        <meta name="description" content="Descrição da minha página" />
+        <title>Camisas Styled Wear</title>
+        <meta name="description" content="Styled Wear created by Gabriel Morais" />
       </Head>
 
-      <Navbar page='shirts'/>
+      <Navbar ProductCount={qntSave} page="shirts" />
       
       <h1 className='uppercase text-font-300 text-center text-xl md:text-3xl mt-5'>Camisas</h1>
 
@@ -56,6 +59,7 @@ export default function Shirts() {
               title={product.title}
               imagem={product.imagem}
               price={product.price}
+              qntKart={qntSave}
             />
           ))
         ) : (

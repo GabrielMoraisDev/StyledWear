@@ -33,7 +33,7 @@ export default function Home() {
         <meta name="description" content="Styled Wear created by Gabriel Morais" />
       </Head>
 
-      <Navbar ProductCount={productCount} page='shirts' />
+      <Navbar ProductCount={productCount} page='pants' />
 
       <div className="w-[80%] m-auto text-center">
         <h1 className='text-font-300 text-center mt-5 mb-3 text-xl uppercase'>{name}</h1>
@@ -57,7 +57,7 @@ export default function Home() {
           <div onClick={addToCart} className='select-none w-full md:w-52 h-auto bg1 mt-2 mb-3 md:mb-10 md:mx-2 md:text-md lg:w-72 p-3 rounded-md text-white hover:opacity-70 duration-300 uppercase cursor-pointer'>
             Adicionar ao carrinho
           </div>
-          <Link href={`/shirts?qnt=${productCount}`}>
+          <Link href={`/pants?qnt=${productCount}`}>
             <div className='select-none w-full md:w-52 h-auto bg1 mt-2 mb-10 md:mb-10 md:text-md md:mx-2 lg:w-72 p-3 rounded-md text-white hover:opacity-70 duration-300 uppercase'>
               Voltar à lista de produtos
             </div>
