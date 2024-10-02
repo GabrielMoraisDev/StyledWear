@@ -1,4 +1,5 @@
 'use client'; // Mantenha isso se precisar de um componente cliente
+import { Suspense } from 'react'; // Importando Suspense
 import { useSearchParams } from 'next/navigation'; // Importando useSearchParams
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -16,33 +17,35 @@ export default function Home() {
 
   return (
     <div className="w-full h-auto">
-      <Navbar ProductCount={ProductCount} page='home' /> {/* Passando ProductCount */}
-      <Slider />
+      <Suspense fallback={<div>Carregando...</div>}> {/* Boundary de Suspense */}
+        <Navbar ProductCount={ProductCount} page='home' /> {/* Passando ProductCount */}
+        <Slider />
 
-      <div className="w-[92%] m-auto">
-        <p className="text-xl text-black text-center mt-5 text-font-300 uppercase">
-          SEU ESTILO, NOSSO COMPROMISSO
-        </p>
-        <hr className="my-3 custom-hr" />
-        
-        <Features qntSave={Number(qnt)}/>
-        <p className="text-xl text-black text-center text-font-300 uppercase my-12 w-[80%] m-auto">
-          Roupas criadas para todos os eventos<br />pensando em você
-        </p>
+        <div className="w-[92%] m-auto">
+          <p className="text-xl text-black text-center mt-5 text-font-300 uppercase">
+            SEU ESTILO, NOSSO COMPROMISSO
+          </p>
+          <hr className="my-3 custom-hr" />
+          
+          <Features qntSave={ProductCount} />
+          <p className="text-xl text-black text-center text-font-300 uppercase my-12 w-[80%] m-auto">
+            Roupas criadas para todos os eventos<br />pensando em você
+          </p>
 
-        <Vitrini qntKart={Number(qnt)}/>
-        <hr className="custom-hr mt-7" />
-      </div>
+          <Vitrini qntKart={ProductCount} />
+          <hr className="custom-hr mt-7" />
+        </div>
 
-      <Catalog />
-      <div className="w-[92%] m-auto">
-        <p className="text-xl text-black text-center text-font-300 uppercase my-12 w-[80%] m-auto">
-          “As roupas certas podem refletir o seu verdadeiro estilo.”
-        </p>
+        <Catalog />
+        <div className="w-[92%] m-auto">
+          <p className="text-xl text-black text-center text-font-300 uppercase my-12 w-[80%] m-auto">
+            “As roupas certas podem refletir o seu verdadeiro estilo.”
+          </p>
 
-        <hr className="custom-hr" />
-        <Footer />
-      </div>
+          <hr className="custom-hr" />
+          <Footer />
+        </div>
+      </Suspense>
     </div>
   );
 }
